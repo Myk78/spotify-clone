@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(34, 33, 33);
+}
+nav ul{
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 252, 252);
+    display: flex;
+    align-items: center;
+    /* padding: 0 40; */
+    height: 65px;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 0 18px;
+    font-size: 1rem;
+}
+.brand img{
+    height: 54px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+.container{
+    min-height: 64vh;
+    background-color:gray ;
+    /* background-color: rgb(57, 65, 58) ; */
+    color: white;
+    display: flex;
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 12px;
+    padding: 20px;
+    background-image:url('MYKlogo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+.songlistcontainer{
+    margin-top: 20px;
+
+}
+.playlist{
+    height: 50px;
+    display: flex ;
+    background-color: rgba(255, 255, 255, 0.096);
+    color: rgb(91, 255, 50);
+    /* width: 80%; */
+    border-radius: 34px;
+    margin: 20px 0;
+    justify-content: space-around ;
+    align-items: center;
+}
+.playlist span{
+    padding: 0 12px;
+}
+.playlist img{
+    width: 80px;
+    margin: 0 1px ;
+    border-radius: 34px;
+}
+.music title{
+    justify-content: center;
+}
+.playlistsong{
+    padding: 0 21px;
+}
+.timestamp i {
+    cursor: pointer;
+}
+
+
+.bottom{
+    display: flex;
+    background-color: black;
+    color: white;
+    position: sticky;
+    height: 5rem;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+#myprogress{
+    width: 80vw;
+}
+.songift{
+    position: absolute;
+    left: 0px;
+    left: 8rem;
+}
+.songift img{
+    width: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    
+}
