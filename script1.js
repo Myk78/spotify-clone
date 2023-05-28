@@ -76,11 +76,30 @@ Array.from(document.getElementsByClassName('songitems')).forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click',()=>{
-    if(songIndex<=9){
-        songindex=0;
+    if(indexsong>=8){
+        indexsong=0
     }
     else{
-        songindex = +1;
+        indexsong = +1;
     }
+
+audioElement.src =`./songs/${indexsong+1}.mp3`;
+audioElement.currentTime=0;
+audioElement.play();
+musicplay.classList.remove('fa-play-circle');
+musicplay.classList.add('fa-pause-circle');
 })
-audioElement.src =`./songs`
+
+document.getElementById('pervious').addEventListener('click',()=>{
+    if(indexsong<=0){
+        indexsong=0
+    }
+    else{
+        indexsong -= 1;
+    }
+    audioElement.src=`./songs/${indexsong+1}.mp3`;
+    audioElement.currentTime=0;
+    audioElement.play();
+    audioElement.classList.remove('fa-play-circle');
+    audioElement.classList.add('fa-pause-circle');
+})
